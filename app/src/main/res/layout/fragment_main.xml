@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityFragment"
+    android:id="@+id/fragmentrelativelayout"
+    android:background="#ffdfeaf1">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portfoliolabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spotifystreamer"
+        android:id="@+id/spotifystreamer"
+        android:layout_below="@+id/portfoliolabel"
+        android:layout_alignRight="@+id/portfoliolabel"
+        android:layout_alignEnd="@+id/portfoliolabel"
+        android:layout_marginTop="@dimen/abc_dialog_padding_material"
+        android:layout_alignLeft="@+id/portfoliolabel"
+        android:layout_alignStart="@+id/portfoliolabel"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:onClick="launchSpotifyStreamer"
+        android:background="#F08C35"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scoresapp"
+        android:id="@+id/scoresapp"
+        android:background="#F08C35"
+        android:layout_below="@+id/spotifystreamer"
+        android:layout_alignLeft="@+id/spotifystreamer"
+        android:layout_alignStart="@+id/spotifystreamer"
+        android:layout_alignRight="@+id/spotifystreamer"
+        android:layout_alignEnd="@+id/spotifystreamer"
+        android:onClick="launchScoresApp"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/libraryapp"
+        android:id="@+id/libraryapp"
+        android:background="#F08C35"
+        android:layout_below="@+id/scoresapp"
+        android:layout_alignLeft="@+id/scoresapp"
+        android:layout_alignStart="@+id/scoresapp"
+        android:layout_alignRight="@+id/scoresapp"
+        android:layout_alignEnd="@+id/scoresapp"
+        android:onClick="launchLibraryApp"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/builditbigger"
+        android:id="@+id/builditbigger"
+        android:background="#F08C35"
+        android:layout_below="@+id/libraryapp"
+        android:layout_alignLeft="@+id/libraryapp"
+        android:layout_alignStart="@+id/libraryapp"
+        android:layout_alignRight="@+id/libraryapp"
+        android:layout_alignEnd="@+id/libraryapp"
+        android:onClick="launchBuildItBigger"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xyzstreamer"
+        android:id="@+id/xyzstreamer"
+        android:background="#F08C35"
+        android:layout_below="@+id/builditbigger"
+        android:layout_alignLeft="@+id/builditbigger"
+        android:layout_alignStart="@+id/builditbigger"
+        android:layout_alignRight="@+id/builditbigger"
+        android:layout_alignEnd="@+id/builditbigger"
+        android:onClick="launchXYZStreamer"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capstone"
+        android:id="@+id/capstone"
+        android:background="#F08C35"
+        android:layout_below="@+id/xyzstreamer"
+        android:layout_alignLeft="@+id/xyzstreamer"
+        android:layout_alignStart="@+id/xyzstreamer"
+        android:layout_alignRight="@+id/xyzstreamer"
+        android:layout_alignEnd="@+id/xyzstreamer"
+        android:onClick="launchCapstone"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"/>
+
+</RelativeLayout>
